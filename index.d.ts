@@ -1,5 +1,5 @@
 declare module 'react-native-numeric-input' {
-  import { ViewStyle } from 'react-native'
+  import { ViewStyle, TextStyle } from 'react-native'
   import { Color } from 'csstype'
 
   export interface INumericInputProps {
@@ -18,7 +18,7 @@ declare module 'react-native-numeric-input' {
     rounded?: boolean
     textColor?: Color
     containerStyle?: ViewStyle
-    inputStyle?: ViewStyle
+    inputStyle?: ViewStyle & TextStyle
     upDownButtonsBackgroundColor?: Color
     rightButtonBackgroundColor?: Color
     leftButtonBackgroundColor?: Color
